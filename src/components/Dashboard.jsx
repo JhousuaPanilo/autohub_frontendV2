@@ -56,7 +56,7 @@ function Dashboard() {
               {recentCars.length > 0 ? (
                 recentCars.map((car) => (
                   <tr key={car?.id}>
-                    <td>{car.name}</td><td>{car.brand}</td><td>{car.price}</td>
+                    <td>{car.name}</td><td>{car.brand}</td><td>${car.price}</td>
                     <td><span className={`status-badge status-${car.status === 'Available' ? 'available' : 'sold'}`}>{car.status}</span></td>
                   </tr>
                 ))
