@@ -67,7 +67,7 @@ function CarTable({ filter }) {
           {localCars.length > 0 ? (
             localCars.map((car, index) => (
               <tr key={car.id || car._id || index}>
-                <td>{car.name}</td><td>{car.brand}</td><td>{car.price}</td><td>{car.year}</td>
+                <td>{car.name}</td><td>{car.brand}</td><td>${car.price}</td><td>{car.year}</td>
                 <td><span className={`status-badge status-${car.status === 'Available' ? 'available' : 'sold'}`}>{car.status}</span></td>
                 <td>
                   <button className="edit-btn" onClick={() => setEditingCar(car)}>✏️ Edit</button>
