@@ -39,7 +39,7 @@ function CarForm({ onCarAdded }) {
       <form onSubmit={handleSubmit}>
         <div className="form-group"><label>Car Model *</label><input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="e.g., Mustang GT" /></div>
         <div className="form-group"><label>Brand *</label><input type="text" name="brand" value={formData.brand} onChange={handleChange} placeholder="e.g., Ford" /></div>
-        <div className="form-group"><label>Price *</label><input type="text" name="price" value={formData.price} onChange={handleChange} placeholder="e.g., $55,000" /></div>
+        <div className="form-group"><label>Price *</label><input type="number" name="price" value={formData.price} onChange={handleChange} placeholder="e.g., $55,000" /></div>
         <div className="form-group"><label>Year</label><input type="number" name="year" value={formData.year} onChange={handleChange} /></div>
         <div className="form-group"><label>Status</label><select name="status" value={formData.status} onChange={handleChange}><option>Available</option><option>Sold</option></select></div>
         <div className="action-buttons" style={{ marginTop: '10px' }}>
